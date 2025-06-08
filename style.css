@@ -1,0 +1,365 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* -------------------------以上為CSS RESET----------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /*   outline: 1px dashed gray; */
+}
+
+body {
+  background: #fbfbfb;
+}
+
+h2,
+h3,
+p,
+a,
+ol,
+ul,
+li {
+  font-family: Noto Sans TC;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+a:hover {
+  background: pink;
+}
+
+.wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 24px 40px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.banner {
+  display: flex;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.banner-left {
+  width: 50%;
+}
+
+.banner-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 24px;
+}
+
+.banner-right h2 {
+  color: #000;
+}
+
+time {
+  font-size: 16px;
+  /*   margin-bottom: 4px; */
+}
+
+.banner-title {
+  margin-bottom: 10px;
+  font-weight: bold;
+  line-height: 1.5;
+  display: flex;
+  align-content: center;
+}
+
+.banner-titleL {
+  font-size: 24px;
+  margin-right: 8px;
+  color: #0027d5;
+}
+
+.btn-new {
+  display: inline-block;
+  background: #0027d5;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 40px;
+  padding: 5px 10px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+main section {
+  width: 70%;
+  margin: 0 auto;
+}
+
+main img {
+  width: 100%;
+  margin: 24px 0px;
+}
+
+a {
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 28px;
+  color: blue;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+main section ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+main section ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.tip {
+  background: #ededed;
+  font-weight: 700;
+  border-radius: 24px;
+  padding: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.btn-page {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 48px;
+  margin-bottom: 80px;
+}
+
+.btn {
+  border: 1px solid black;
+  border-radius: 40px;
+  padding: 8px 16px;
+  color: #4b4b4b;
+}
+
+.mail {
+  font-size: 32px;
+}
+
+footer .links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.copyright {
+  text-align: center;
+  background: #ffffff;
+}
+
+@media (max-width: 992px) {
+  /*   body{
+    background: gray;
+  } */
+
+  .banner {
+    flex-wrap: wrap;
+  }
+  .banner-left {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .banner-right {
+    margin: 0 auto;
+  }
+
+  main section {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  /*   body {
+    background: pink;
+  } */
+
+  .banner-left {
+    width: 100%;
+  }
+
+  .banner-right {
+    width: 95%;
+  }
+
+  main section {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .links {
+    flex-wrap: wrap;
+  }
+
+  .mail {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+  }
+
+  .icons {
+  }
+}
